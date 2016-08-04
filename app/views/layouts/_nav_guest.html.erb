@@ -15,8 +15,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/home">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="/explore">Explore</a></li>
-
+        <li class="active"><li><%= link_to "Feature"  %></li><span class="sr-only">(current)</span></a></li>
+        <li class="active"><li><%=link_to "Sports"  %></li><span class="sr-only">(current)</span></a></li>
+        <li class="active"><li><%=link_to "News"  %></li><span class="sr-only">(current)</span></a></li>
+        <li class="active"><li><%=link_to "Entertainment"  %></li><span class="sr-only">(current)</span></a></li>
+        <li class="active"><li><%=link_to "Lifestyle"  %></li><span class="sr-only">(current)</span></a></li>
       </ul>
       <form class="navbar-form navbar-right">
         <div class="form-group">
@@ -27,13 +30,11 @@
       <ul class="nav navbar-nav navbar-right">
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User Name <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/profile">Profile</a></li>
-            <li><a href="/settings">Settings</a></li>
-            <li><a href="/friends">Friends List</a></li>
+            <li><%= link_to "Sign in", new_user_session_path %></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Sign Out</a></li>
+            <li><%= link_to "Sign up", new_user_registration_path %></li>
           </ul>
         </li>
       </ul>
