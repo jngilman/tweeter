@@ -1,9 +1,9 @@
-<%= form_for(@Posts) do |f| %>
+<%= form_for(@newPost) do |f| %>
 <div class="field">
 	<%= f.label :content %>
 	<%= f.text_field :content, autofocus: true %>
 </div>
 <div class="actions">
-	<%= f.submit "Tweet!", :class => "submit"%>
+	<%= f.submit "Tweet!" %>
 </div>
 <% end %>
