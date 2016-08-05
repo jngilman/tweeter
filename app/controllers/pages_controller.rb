@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def profile
+    @username = params[:id]
   end
 
   def explore
