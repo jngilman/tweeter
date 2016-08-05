@@ -7,11 +7,14 @@
 </div>
 <div class="row">
   <div class="col-xs-3">
+    <%= render 'layouts/components/post_form' %>
+    <% for @p in @Posts do %>
     <div class="panel panel-default">
       <div class="panel-body">
-       <p>Tweets</p>
+       <p> <%= render 'components/post' %></p>
       </div>
     </div>
+  <% end %>
   </div>
 
   <div class="col-xs-6">
